@@ -1,9 +1,8 @@
 'use client'
-import { useRouter } from 'next/navigation'
-import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
+
 const checkout = () => {
     const {
         cartItems,
@@ -11,6 +10,25 @@ const checkout = () => {
         loading,
         totalPrice
     } = useSelector((state) => state.cart)
+
+
+    const button = async () => {
+
+        const product = cartItems.map(items => {
+            return `Items: ${items.name}, lbs or pints: ${items.qty}; `
+        })
+
+        const res = await fetch('/api/send', {
+            method: 'POST',
+            body: JSON.stringify({
+                item: product
+            })
+        })
+        const data = await res.json()
+        console.log(data)
+    }
+
+
     return (
         <div>
             {loading ? (
@@ -77,7 +95,7 @@ const checkout = () => {
                                 </li>
                                 <li>
                                     <button
-                                        onClick={() => alert('Not implemented')}
+                                        onClick={button}
                                         className="primary-button w-full"
                                     >
                                         Place Order
@@ -91,5 +109,7 @@ const checkout = () => {
         </div>
     )
 }
-
+<div className="w-screen h-screen flex justify-center items-center">
+    <h1 className="text-6xl text-black max-w-[600px] mx-auto"></h1>
+</div>
 export default checkout

@@ -20,6 +20,7 @@ export default function CartSidebar() {
   const pathname = usePathname()
   const router = useRouter()
 
+
   return (
     <div
       className={
@@ -27,7 +28,7 @@ export default function CartSidebar() {
           ? ''
           : cartItems.length > 0 &&
             (pathname === '/' || pathname.indexOf('/product/') >= 0)
-            ? 'fixed top-0 right-0 w-32 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-red-400'
+            ? 'fixed top-0 right-0 w-32 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
             : 'hidden'
       }
     >

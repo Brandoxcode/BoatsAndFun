@@ -107,7 +107,7 @@ export const data = {
             name: 'Shrimp Ceviche - 1/2 Pint',
             description: '',
             price: 13,
-            countInStock: 10,
+            countInStock: 1,
         },
     ],
     CrabAndShellfish: [
@@ -223,7 +223,7 @@ export const data = {
             name: 'Mango Salsa - 1/2 Pint',
             description: '',
             price: 10,
-            countInStock: 10,
+            countInStock: 1,
         },
         {
             id: '28',
@@ -239,7 +239,7 @@ export const data = {
             name: 'Black Bean Salsa - 1/2 Pint',
             description: '',
             price: 10,
-            countInStock: 10,
+            countInStock: 1,
         },
     ],
     Seasoning: [

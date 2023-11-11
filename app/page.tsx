@@ -1,8 +1,6 @@
 import CrabandShellfish from "@/components/CrabandShellfish";
-import EmailButton from "@/components/EmailButton";
 import FishFillets from "@/components/FishFillets";
 import FreshText from "@/components/FreshText";
-import Header from "@/components/Header";
 import NumberText from "@/components/NumberText";
 import ProductItem from "@/components/ProductItem";
 import SaucesAndSalsa from "@/components/SaucesAndSalsa";
@@ -71,9 +69,7 @@ export default function Home() {
           <ProductItem key={product.id} product={product} />
         ))}
       </div>
-      <div className="w-screen h-screen flex justify-center items-center">
-        <h1 className="text-6xl text-black max-w-[600px] mx-auto"><EmailButton /></h1>
-      </div>
+
     </div>
   )
 }
