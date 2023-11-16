@@ -13,8 +13,7 @@ import { data } from "@/utils/data";
 export default function Home() {
   const { products, shrimp, CrabAndShellfish, SaucesandSalsa, Seasoning, Special } = data
   return (
-    <div >
-
+    <div className="max-w[600px]:">
       <div className="flex justify-center items-center pt-2">
         <FreshText />
       </div>
