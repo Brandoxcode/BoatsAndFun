@@ -10,6 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Boats and Fun',
   description: 'Boats and Fun fresh fish',
+  icons: {
+    icon: ['/favicon/favicon.ico?v=4'],
+    apple: ['/favicon/apple-touch-icon.png?v=4'],
+    shortcut: ['/favicon/apple-touch-icon.png']
+  }
 }
 
 export default function RootLayout({
