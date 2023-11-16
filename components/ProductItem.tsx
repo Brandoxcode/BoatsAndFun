@@ -3,7 +3,7 @@ import AddToCart from "./AddToCart";
 
 export default function ProductItem({ product }) {
     return (
-        <div className="min-w-[1000px]">
+        <div className="card w-full p-2 px-10">
             <ul role="list" className="divide-y divide-gray-100 ">
                 <li className="grid grid-flow-col gap-x-6 py-5 ">
                     <div className="flex min-w-0 gap-x-4">
