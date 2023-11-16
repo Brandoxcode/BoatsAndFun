@@ -6,22 +6,29 @@ import Link from 'next/link'
 const checkout = () => {
     const {
         cartItems,
-        itemsPrice,
         loading,
-        totalPrice
+        totalPrice,
+        info,
     } = useSelector((state) => state.cart)
 
 
     const button = async () => {
 
+        const name = info.fullName
+        const email = info.email
+        const number = info.number
+
         const product = cartItems.map(items => {
-            return `Items: ${items.name}, lbs or pints: ${items.qty}; `
+            return `Items: ${items.name}\, lbs or pints: ${items.qty}; `
         })
 
         const res = await fetch('/api/send', {
             method: 'POST',
             body: JSON.stringify({
-                item: product
+                item: product,
+                name: name,
+                email: email,
+                number: number
             })
         })
         const data = await res.json()
@@ -34,11 +41,25 @@ const checkout = () => {
             {loading ? (
                 <div>Loading</div>
             ) : cartItems.length === 0 ? (
-                <div>
+                <div className='flex justify-center items-center'>
                     Cart is empty. <Link href="/">Go shopping</Link>
                 </div>
             ) : (
+
                 <div className="grid md:grid-cols-4 md:gap-5">
+                    <div className="card  p-5">
+                        <h2 className="mb-2 text-lg flex justify-center items-center pt-12">Contact Info</h2>
+                        <div className='flex justify-center items-center'>
+                            {info.fullName},{`\n`}
+                            {info.number},{`\n`}
+                            {info.email}
+                        </div>
+                        <div>
+                            <Link className="default-button inline-block flex justify-center items-center" href="/info">
+                                Edit
+                            </Link>
+                        </div>
+                    </div>
                     <div className="overflow-x-auto md:col-span-3">
                         <div className="card overflow-x-auto p-5">
                             <h2 className="mb-2 text-lg">Order Items</h2>
@@ -78,12 +99,15 @@ const checkout = () => {
                                     ))}
                                 </tbody>
                             </table>
+                            <Link className="default-button inline-block " href="/cart">
+                                Edit
+                            </Link>
                             <div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div className="card  p-5">
+                        <div className="card  p-5 w-full">
                             <h2 className="mb-2 text-lg">Order Summary</h2>
                             <ul>
 
@@ -109,7 +133,4 @@ const checkout = () => {
         </div>
     )
 }
-<div className="w-screen h-screen flex justify-center items-center">
-    <h1 className="text-6xl text-black max-w-[600px] mx-auto"></h1>
-</div>
 export default checkout

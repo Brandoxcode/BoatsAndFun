@@ -76,7 +76,7 @@ export default function CartSidebar() {
           </div>
           <button
             className="w-full text-center p-1  rounded-2xl border-2"
-            onClick={() => router.push('/checkout')}
+            onClick={() => router.push('/info')}
           >
             checkout
           </button>
