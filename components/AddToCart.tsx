@@ -38,7 +38,7 @@ const AddToCart = ({
             )}
             <div>
 
-                <button className="primary-button w-full" onClick={addToCartHandler}>
+                <button className="primary-button w-full sm:flex sm:flex-col sm:items-end md:flex md:flex-col md:items-end" onClick={addToCartHandler}>
                     Add to cart
                 </button>
 
