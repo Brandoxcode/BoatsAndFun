@@ -9,8 +9,8 @@ export default function Header() {
                 <Image
                     className="flex-none rounded-full bg-gray-50 absolute top-3 left-40 right-0"
                     src='/images/bflogo.png'
-                    width={120}
-                    height={100}
+                    width={70}
+                    height={70}
                     alt='logo' />
             </Link>
             <nav className="bg-yellow-500 flex justify-between items-center h-full p-4 mt-2"></nav>

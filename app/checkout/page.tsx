@@ -2,6 +2,7 @@
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const checkout = () => {
     const {
@@ -10,6 +11,8 @@ const checkout = () => {
         totalPrice,
         info,
     } = useSelector((state) => state.cart)
+
+    const router = useRouter()
 
 
     const button = async () => {
@@ -33,6 +36,10 @@ const checkout = () => {
         })
         const data = await res.json()
         console.log(data)
+
+        alert('your order were submitted')
+
+        router.push('/thanks')
     }
 
 
