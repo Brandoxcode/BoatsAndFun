@@ -6,6 +6,7 @@ const FreshText = () => {
                 <ul className="list-disc list-inside">
                     <li>Order by 4pm for next day delivery.</li>
                     <li>Orders can be picked up at our store in North Captiva during normal business hours (9am-5pm)</li>
+                    <li>If your using your phone, please rotate your phone</li>
                 </ul>
             </div>
         </div>

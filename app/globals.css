@@ -11,5 +11,5 @@
 }
 
 .card {
-    @apply mb-5 block rounded-lg border border-gray-200 shadow-md sm:max-w-sm;
+    @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
 }
