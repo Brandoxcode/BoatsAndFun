@@ -54,7 +54,7 @@ const info = () => {
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="number">Number</label>
+                    <label htmlFor="number">Phone number</label>
                     <input
                         className="w-full bg-slate-400"
                         id="number"

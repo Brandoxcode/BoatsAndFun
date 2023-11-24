@@ -60,8 +60,8 @@ export default function CartSidebar() {
                   }
                 >
                   {[...Array(item.countInStock).keys()].map((x) => (
-                    <option key={x + 1} value={x + 1}>
-                      {x + 1}
+                    <option key={x = 0.5} value={x *= 0.5}>
+                      {x *= 1}
                     </option>
                   ))}
                 </select>

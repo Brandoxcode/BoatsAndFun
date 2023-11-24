@@ -13,8 +13,8 @@ export async function POST(request: Request) {
         const data = await resend.emails.send({
             from: 'Boats and Fun <onboarding@resend.dev>',
             to: ['brandon.a2001@outlook.es', email],
-            subject: 'Order',
-            react: EmailTemplate({ item, name, number }),
+            subject: name + 'Sea food order',
+            react: EmailTemplate({ item, name, number, email }),
         });
 
         return NextResponse.json(data);

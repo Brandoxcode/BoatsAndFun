@@ -37,7 +37,7 @@ const checkout = () => {
         const data = await res.json()
         console.log(data)
 
-        alert('your order were submitted')
+        alert('your order was submitted, is not confirmed until Boats and fun associate contacts you')
 
         router.push('/thanks')
     }
@@ -53,7 +53,7 @@ const checkout = () => {
                 </div>
             ) : (
 
-                <div className="grid md:grid-cols-4 md:gap-5">
+                <div className="grid md:grid-cols-4 md:gap-5 pt-2">
                     <div className="card  p-5">
                         <h2 className="mb-2 text-lg flex justify-center items-center pt-12">Contact Info</h2>
                         <div className='flex justify-center items-center'>
@@ -70,6 +70,7 @@ const checkout = () => {
                     <div className="overflow-x-auto md:col-span-3">
                         <div className="card overflow-x-auto p-5">
                             <h2 className="mb-2 text-lg">Order Items</h2>
+                            <p className='text-sm'>Prices are subject to market changes</p>
                             <table className="min-w-full">
                                 <thead className="border-b">
                                     <tr>
