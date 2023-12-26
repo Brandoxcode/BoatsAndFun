@@ -8,6 +8,13 @@ import App from '@/components/App'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  viewport: {
+    width: "device-width",
+    height: "device-height",
+    initialScale: 1,
+    maximumScale: 1,
+    minimumScale: 1,
+  },
   title: 'Boats and Fun',
   description: 'Boats and Fun fresh fish',
   icons: {

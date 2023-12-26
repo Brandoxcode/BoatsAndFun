@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <FishFillets />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-6">
         <Shrimp />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {shrimp.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-6">
         <CrabandShellfish />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {CrabAndShellfish.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-6">
         <SaucesAndSalsa />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {SaucesandSalsa.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-6">
         <Seasonings />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {Seasoning.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
@@ -63,7 +63,7 @@ export default function Home() {
       <div className="flex justify-center items-center pt-6">
         <SpecialItems />
       </div>
-      <div className="flex justify-center items-center grid grid-rows-1">
+      <div className="justify-center items-center grid grid-rows-1">
         {Special.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
