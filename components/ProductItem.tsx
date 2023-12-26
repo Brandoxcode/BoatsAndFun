@@ -17,17 +17,19 @@ export default function ProductItem({ product }) {
                         </button>
                         <div className="min-w-0 flex-auto">
                             <p className="text-sm font-semibold leading-6 text-gray-900">{product.name}</p>
+                            <p className="text-sm leading-6 text-gray-900">${product.price}</p>
                             <p className="mt-1 truncate text-xs leading-5 text-gray-500">{product.description}</p>
+                            <AddToCart
+                                showQty={false}
+                                product={product}
+                                increasePerClick={true}
+                                redirect={false}
+                            />
                         </div>
                     </div>
                     <div className="hidden shrink-0 sm:flex sm:justify-center sm:items-center">
-                        <p className="text-sm leading-6 text-gray-900">${product.price}</p>
-                        <AddToCart
-                            showQty={false}
-                            product={product}
-                            increasePerClick={true}
-                            redirect={false}
-                        />
+
+
                     </div>
                 </li>
             </ul>
