@@ -28,7 +28,7 @@ export default function CartSidebar() {
           ? ''
           : cartItems.length > 0 &&
             (pathname === '/' || pathname.indexOf('/product/') >= 0)
-            ? 'sm:w-16 fixed top-0 right-0 w-24 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
+            ? 'fixed top-0 right-0 w-24 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
             : 'hidden'
       }
     >

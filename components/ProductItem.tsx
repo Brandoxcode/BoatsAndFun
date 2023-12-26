@@ -27,10 +27,6 @@ export default function ProductItem({ product }) {
                             />
                         </div>
                     </div>
-                    <div className="hidden shrink-0 sm:flex sm:justify-center sm:items-center">
-
-
-                    </div>
                 </li>
             </ul>
         </div>
