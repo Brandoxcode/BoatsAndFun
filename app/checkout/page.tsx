@@ -20,6 +20,7 @@ const checkout = () => {
         const name = info.fullName
         const email = info.email
         const number = info.number
+        const memo = info.memo
 
         const product = cartItems.map(items => {
             return `Items: ${items.name}\, lbs or pints: ${items.qty}; `
@@ -31,7 +32,8 @@ const checkout = () => {
                 item: product,
                 name: name,
                 email: email,
-                number: number
+                number: number,
+                memo: memo
             })
         })
         const data = await res.json()
@@ -57,9 +59,10 @@ const checkout = () => {
                     <div className="card  p-5">
                         <h2 className="mb-2 text-lg flex justify-center items-center pt-12">Contact Info</h2>
                         <div className='flex justify-center items-center'>
-                            {info.fullName},{`\n`}
-                            {info.number},{`\n`}
-                            {info.email}
+                            Name: {info.fullName};{`\n`}
+                            Number: {info.number};{`\n`}
+                            Email: {info.email};
+                            Memo: {info.memo}.
                         </div>
                         <div>
                             <Link className="default-button inline-block flex justify-center items-center" href="/info">
@@ -70,7 +73,7 @@ const checkout = () => {
                     <div className="overflow-x-auto md:col-span-3">
                         <div className="card overflow-x-auto p-5">
                             <h2 className="mb-2 text-lg">Order Items</h2>
-                            <p className='text-sm'>Prices are subject to market changes</p>
+                            <p className='text-sm'>Prices are subject to changes according to  market prices and do not include 35% delivery fee or Florida Sales Taxes</p>
                             <table className="min-w-full">
                                 <thead className="border-b">
                                     <tr>

@@ -61,8 +61,8 @@ const info = () => {
                         {...register('number', {
                             required: 'Please enter phone number',
                             minLength: {
-                                value: 3,
-                                message: 'Address is more than 2 chars',
+                                value: 10,
+                                message: 'Please enter your phone number',
                             },
                         })}
                     />
@@ -75,6 +75,14 @@ const info = () => {
                         {...register('email', {
                             required: 'Please enter email',
                         })}
+                    />
+                </div>
+                <div className="mb-4">
+                    <label htmlFor="memo">memo</label>
+                    <input
+                        className="w-full  bg-slate-400"
+                        id="memo"
+                        {...register('memo')}
                     />
                 </div>
                 <div className="mb-4 flex justify-between">

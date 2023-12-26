@@ -20,7 +20,7 @@ export default function ProductItem({ product }) {
                             <p className="mt-1 truncate text-xs leading-5 text-gray-500">{product.description}</p>
                         </div>
                     </div>
-                    <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end ">
+                    <div className="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
                         <p className="text-sm leading-6 text-gray-900">${product.price}</p>
                         <AddToCart
                             showQty={false}

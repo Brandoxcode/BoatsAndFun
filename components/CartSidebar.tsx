@@ -39,7 +39,7 @@ export default function CartSidebar() {
       ) : (
         <>
           <div className="p-2 flex flex-col items-center border-b border-b-gary-600">
-            <div>subtotal</div>
+            <div>Subtotal</div>
             <div className="font-bold text-orange-700">${itemsPrice}</div>
             {cartItems.map((item) => (
               <div
