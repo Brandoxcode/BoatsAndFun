@@ -6,7 +6,7 @@ const EmailTemplate = ({ item, name, number, email, memo }) => (
         <p>Number: {number}</p>
         <p>Email: {email}</p>
         <p>{item}</p>
-        <p>{memo}</p>
+        <p>Memo: {memo}</p>
     </div>
 )
 
