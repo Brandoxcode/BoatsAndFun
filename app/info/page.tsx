@@ -22,6 +22,7 @@ const info = () => {
         setValue('fullName', info.name)
         setValue('number', info.number)
         setValue('email', info.email)
+        setValue('memo', info.memo)
     }, [setValue, info])
 
     const submitHandler = ({
@@ -78,7 +79,7 @@ const info = () => {
                     />
                 </div>
                 <div className="mb-4">
-                    <label htmlFor="memo">memo</label>
+                    <label htmlFor="memo">Memo</label>
                     <input
                         className="w-full  bg-slate-400"
                         id="memo"
