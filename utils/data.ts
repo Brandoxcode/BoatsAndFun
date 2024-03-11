@@ -147,12 +147,20 @@ export const data = {
             id: '18',
             image: '/images/c5.png',
             name: 'Live Clams - 100 count',
-            description: 'Live middle neck clams. Dozen $8',
+            description: 'Live middle neck clams.',
             price: 33.99,
             countInStock: 21,
         },
         {
             id: '19',
+            image: '/images/c5.png',
+            name: 'Live Clams - Dozen',
+            description: 'Live middle neck clams.',
+            price: 8,
+            countInStock: 21,
+        },
+        {
+            id: '20',
             image: '/images/c6.png',
             name: 'Oysters',
             description: '30 lb box of oysters',
@@ -162,7 +170,7 @@ export const data = {
     ],
     SaucesandSalsa: [
         {
-            id: '20',
+            id: '21',
             image: '/images/ss1.png',
             name: 'Cocktail Sauce',
             description: '8oz',
@@ -170,7 +178,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '21',
+            id: '22',
             image: '/images/ss2.png',
             name: 'Tarter Sauce',
             description: '8oz',
@@ -178,7 +186,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '22',
+            id: '23',
             image: '/images/ss3.png',
             name: 'Garlic Butter',
             description: '8oz',
@@ -186,17 +194,9 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '23',
+            id: '24',
             image: '/images/ss4.png',
             name: 'Sweet Chili Sauce',
-            description: '8oz',
-            price: 6,
-            countInStock: 21,
-        },
-        {
-            id: '24',
-            image: '/images/s2.png',
-            name: 'Pirate Sauce',
             description: '8oz',
             price: 6,
             countInStock: 21,
@@ -211,6 +211,14 @@ export const data = {
         },
         {
             id: '26',
+            image: '/images/s2.png',
+            name: 'Pirate Sauce',
+            description: '8oz',
+            price: 6,
+            countInStock: 21,
+        },
+        {
+            id: '27',
             image: '/images/ss5.png',
             name: 'Mango Salsa - 1 Pint',
             description: '',
@@ -218,7 +226,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '27',
+            id: '28',
             image: '/images/ss5.png',
             name: 'Mango Salsa - 1/2 Pint',
             description: '',
@@ -226,7 +234,7 @@ export const data = {
             countInStock: 1,
         },
         {
-            id: '28',
+            id: '29',
             image: '/images/ss6.png',
             name: 'Black Bean Salsa - 1 Pint',
             description: '',
@@ -234,7 +242,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '29',
+            id: '30',
             image: '/images/ss6.png',
             name: 'Black Bean Salsa - 1/2 Pint',
             description: '',
@@ -244,7 +252,7 @@ export const data = {
     ],
     Seasoning: [
         {
-            id: '30',
+            id: '31',
             image: '/images/seas1.png',
             name: 'Beer Batter',
             description: '',
@@ -252,7 +260,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '31',
+            id: '32',
             image: '/images/seas2.png',
             name: 'Old Bay',
             description: '',
@@ -260,7 +268,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '32',
+            id: '33',
             image: '/images/seas3.png',
             name: 'Chef Paul Blackening',
             description: '',
@@ -268,7 +276,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '33',
+            id: '34',
             image: '/images/seas4.png',
             name: 'Panko Bread Crumbs',
             description: '',
@@ -276,7 +284,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '34',
+            id: '35',
             image: '/images/seas5.png',
             name: 'Shrimp / Crab Boil',
             description: '',
@@ -284,7 +292,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '35',
+            id: '36',
             image: '/images/seas6.png',
             name: 'Lemon Juice',
             description: '',
@@ -292,7 +300,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '36',
+            id: '37',
             image: '/images/seas7.png',
             name: 'Fresh Lemon / Lime',
             description: '',
@@ -302,7 +310,7 @@ export const data = {
     ],
     Special: [
         {
-            id: '37',
+            id: '38',
             image: '/images/spes1.png',
             name: 'Gator Tail',
             description: 'Cubed',
@@ -310,7 +318,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '38',
+            id: '39',
             image: '/images/spes2.png',
             name: 'Frog Legs',
             description: '4-6 per pound',
@@ -318,7 +326,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '39',
+            id: '40',
             image: '/images/spes3.png',
             name: 'Lobster Bisque - 1 Quart',
             description: '',
@@ -326,7 +334,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '40',
+            id: '41',
             image: '/images/spes3.png',
             name: 'Lobster Bisque - 1 Pint',
             description: '',
