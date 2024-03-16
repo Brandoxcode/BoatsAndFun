@@ -115,7 +115,7 @@ export const data = {
             id: '14',
             image: '/images/c1.png',
             name: 'Fresh Crab Cakes',
-            description: '1/4 lb individual patties , pairs well with Pirate Sauce.',
+            description: '1/4 lb individual patties , pairs well with Pirate Sauce',
             price: 13,
             countInStock: 21,
         },
