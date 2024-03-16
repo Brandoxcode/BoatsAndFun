@@ -145,8 +145,8 @@ export const data = {
         {
             id: '16',
             image: '/images/c3.png',
-            name: 'Fresh Mussels. order by pounds',
-            description: '',
+            name: 'Fresh Mussels',
+            description: 'order by pounds',
             orderBy: 'lb',
             price: 9.99,
             countInStock: 21,
