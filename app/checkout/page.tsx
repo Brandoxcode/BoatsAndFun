@@ -23,7 +23,7 @@ const checkout = () => {
         const memo = info.memo
 
         const product = cartItems.map(items => {
-            return `Items: ${items.name}\, lbs or pints: ${items.qty}; `
+            return `${items.qty} ${items.orderBy}: ${items.name}; `
         })
 
         const res = await fetch('/api/send', {
