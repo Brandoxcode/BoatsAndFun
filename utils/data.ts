@@ -6,7 +6,7 @@ export const data = {
             name: 'Gulf Grouper',
             description: 'Mild with sweet taste and large chunky flakes. order by pound',
             orderBy: 'lb',
-            price: 31.99,
+            price: 33.99,
             countInStock: 21,
 
         },
@@ -16,7 +16,7 @@ export const data = {
             name: 'Red Snapper',
             description: 'Mild with a slightly sweet taste. order by pound',
             orderBy: 'lb',
-            price: 31.99,
+            price: 32.99,
             countInStock: 21,
         },
         {
@@ -120,12 +120,21 @@ export const data = {
             description: 'order by 1/2 pint',
             orderBy: '1/2 pint',
             price: 13,
-            countInStock: 1,
+            countInStock: 3,
+        },
+        {
+            id: '14',
+            image: '/images/shrimpCocktail.png',
+            name: 'Jumbo Shrimp Cocktail',
+            description: 'Individual serving',
+            orderBy: '',
+            price: 10.99,
+            countInStock: 21,
         },
     ],
     CrabAndShellfish: [
         {
-            id: '14',
+            id: '15',
             image: '/images/c1.png',
             name: 'Fresh Crab Cakes',
             description: '1/4 lb individual patties , pairs well with Pirate Sauce',
@@ -134,16 +143,16 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '15',
+            id: '16',
             image: '/images/c2.png',
             name: 'Stone Crab Claws',
-            description: 'Available in Medium, Large & Jumbo. Market Price',
+            description: 'Market Price',
             orderBy: 'lb',
             price: '',
             countInStock: 21,
         },
         {
-            id: '16',
+            id: '17',
             image: '/images/c3.png',
             name: 'Fresh Mussels',
             description: 'order by pounds',
@@ -152,7 +161,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '17',
+            id: '18',
             image: '/images/c4.png',
             name: 'Fresh Scallops',
             description: '10-20 per pound',
@@ -161,21 +170,12 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '18',
+            id: '19',
             image: '/images/c5.png',
             name: 'Live Clams - 100 count',
             description: 'Live middle neck clams.',
             orderBy: 'houndred',
             price: 33.99,
-            countInStock: 21,
-        },
-        {
-            id: '19',
-            image: '/images/c5.png',
-            name: 'Live Clams - Dozen',
-            description: 'Live middle neck clams.',
-            orderBy: 'dozen',
-            price: 8,
             countInStock: 21,
         },
         {
@@ -236,15 +236,6 @@ export const data = {
         },
         {
             id: '26',
-            image: '/images/s2.png',
-            name: 'Pirate Sauce',
-            description: '8oz',
-            orderBy: '',
-            price: 6,
-            countInStock: 21,
-        },
-        {
-            id: '27',
             image: '/images/ss5.png',
             name: 'Mango Salsa - 1 Pint',
             description: '',
@@ -253,16 +244,16 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '28',
+            id: '27',
             image: '/images/ss5.png',
             name: 'Mango Salsa - 1/2 Pint',
             description: '',
             orderBy: '1/2 pint',
-            price: 21,
-            countInStock: 1,
+            price: 10,
+            countInStock: 3,
         },
         {
-            id: '29',
+            id: '28',
             image: '/images/ss6.png',
             name: 'Black Bean Salsa - 1 Pint',
             description: '',
@@ -271,18 +262,18 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '30',
+            id: '29',
             image: '/images/ss6.png',
             name: 'Black Bean Salsa - 1/2 Pint',
             description: '',
             orderBy: '1/2 pint',
-            price: 21,
-            countInStock: 1,
+            price: 10,
+            countInStock: 3,
         },
     ],
     Seasoning: [
         {
-            id: '31',
+            id: '30',
             image: '/images/seas1.png',
             name: 'Beer Batter',
             description: '',
@@ -291,7 +282,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '32',
+            id: '31',
             image: '/images/seas2.png',
             name: 'Old Bay',
             description: '',
@@ -300,7 +291,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '33',
+            id: '32',
             image: '/images/seas3.png',
             name: 'Chef Paul Blackening',
             description: '',
@@ -309,7 +300,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '34',
+            id: '33',
             image: '/images/seas4.png',
             name: 'Panko Bread Crumbs',
             description: '',
@@ -318,7 +309,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '35',
+            id: '34',
             image: '/images/seas5.png',
             name: 'Shrimp / Crab Boil',
             description: '',
@@ -327,7 +318,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '36',
+            id: '35',
             image: '/images/seas6.png',
             name: 'Lemon Juice',
             description: '',
@@ -336,7 +327,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '37',
+            id: '36',
             image: '/images/seas7.png',
             name: 'Fresh Lemon / Lime',
             description: '',
@@ -347,7 +338,7 @@ export const data = {
     ],
     Special: [
         {
-            id: '38',
+            id: '37',
             image: '/images/spes1.png',
             name: 'Gator Tail',
             description: 'Cubed',
@@ -356,7 +347,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '39',
+            id: '38',
             image: '/images/spes2.png',
             name: 'Frog Legs',
             description: '4-6 per pound',
@@ -365,7 +356,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '40',
+            id: '39',
             image: '/images/spes3.png',
             name: 'Lobster Bisque - 1 Quart',
             description: '',
@@ -374,7 +365,7 @@ export const data = {
             countInStock: 21,
         },
         {
-            id: '41',
+            id: '40',
             image: '/images/spes3.png',
             name: 'Lobster Bisque - 1 Pint',
             description: '',
