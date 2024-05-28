@@ -11,8 +11,8 @@ export async function POST(request: Request) {
         const { item, name, email, number, memo } = body
         console.log('body', body)
         const data = await resend.emails.send({
-            from: 'Boats and Fun <onboarding@resend.dev>',
-            to: ['brandon.a2001@outlook.es', 'reservations@boatsandfun.com', email],
+            from: 'Boats and Fun <noreply@boatsandfunorder.com>',
+            to: ['reservations@boatsandfun.com', email],
             subject: name + ' ' + 'Seafood Order',
             react: EmailTemplate({ item, name, number, email, memo }),
         });
