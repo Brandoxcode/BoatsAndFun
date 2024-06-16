@@ -16,7 +16,7 @@ export const data = {
             name: 'Red Snapper',
             description: 'Mild with a slightly sweet taste. order by pound',
             orderBy: 'lb',
-            price: 32.99,
+            price: 33.99,
             countInStock: 21,
         },
         {
@@ -25,10 +25,10 @@ export const data = {
             name: 'Triple Tail',
             description: 'Slightly mild with a sweet taste. order by pound',
             orderBy: 'lb',
-            price: 28.99,
+            price: 33.99,
             countInStock: 21,
         },
-        {
+        /*{
             id: '4',
             image: '/images/p4.png',
             name: 'Wild Salmon',
@@ -54,7 +54,7 @@ export const data = {
             orderBy: 'lb',
             price: 25.99,
             countInStock: 21,
-        },
+        },*/
 
 
     ],
@@ -65,7 +65,7 @@ export const data = {
             name: 'Peel N Eat - Medium',
             description: '21-25 shrimp per pound',
             orderBy: 'lb',
-            price: 18.99,
+            price: 19.99,
             countInStock: 21,
         },
         {
@@ -77,7 +77,7 @@ export const data = {
             price: 22.99,
             countInStock: 21,
         },
-        {
+        /*{
             id: '9',
             image: '/images/s2.png',
             name: 'Mango BBQ Skewer',
@@ -130,10 +130,10 @@ export const data = {
             orderBy: '',
             price: 10.99,
             countInStock: 21,
-        },
+        },  */
     ],
     CrabAndShellfish: [
-        {
+        /*{
             id: '15',
             image: '/images/c1.png',
             name: 'Fresh Crab Cakes',
@@ -159,7 +159,7 @@ export const data = {
             orderBy: 'lb',
             price: 9.99,
             countInStock: 21,
-        },
+        },*/
         {
             id: '18',
             image: '/images/c4.png',
@@ -175,7 +175,7 @@ export const data = {
             name: 'Live Clams - 100 count',
             description: 'Live middle neck clams.',
             orderBy: 'houndred',
-            price: 33.99,
+            price: 40,
             countInStock: 21,
         },
         {
@@ -207,7 +207,7 @@ export const data = {
             price: 6,
             countInStock: 21,
         },
-        {
+        /*{
             id: '23',
             image: '/images/ss3.png',
             name: 'Garlic Butter',
@@ -269,10 +269,10 @@ export const data = {
             orderBy: '1/2 pint',
             price: 10,
             countInStock: 3,
-        },
+        },*/
     ],
     Seasoning: [
-        {
+        /*{
             id: '30',
             image: '/images/seas1.png',
             name: 'Beer Batter',
@@ -280,7 +280,7 @@ export const data = {
             orderBy: '',
             price: 3.99,
             countInStock: 21,
-        },
+        },*/
         {
             id: '31',
             image: '/images/seas2.png',
@@ -337,7 +337,7 @@ export const data = {
         },
     ],
     Special: [
-        {
+        /*{
             id: '37',
             image: '/images/spes1.png',
             name: 'Gator Tail',
@@ -354,7 +354,7 @@ export const data = {
             orderBy: 'lb',
             price: 13.99,
             countInStock: 21,
-        },
+        },*/
         {
             id: '39',
             image: '/images/spes3.png',
