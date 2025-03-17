@@ -13,3 +13,18 @@
 .card {
     @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
 }
+
+.bg {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('/images/chart.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}

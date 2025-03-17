@@ -1,9 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Analytics } from "@vercel/analytics/react"
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import { StoreProvider } from '@/redux/StoreProvider'
 import App from '@/components/App'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,15 +32,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={inter.className}>
         <div className="pt-1.5">
+
           <Header />
         </div>
         <StoreProvider>
           {children}
-          <App />
+          <App>{children}</App>
         </StoreProvider>
+        <Analytics />
       </body>
     </html>
   )

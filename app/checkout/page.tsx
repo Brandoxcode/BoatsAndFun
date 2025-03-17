@@ -85,7 +85,7 @@ const checkout = () => {
                                 </thead>
                                 <tbody>
                                     {cartItems.map((item) => (
-                                        <tr key={item.id} className="border-b">
+                                        <tr key={item.name} className="border-b">
                                             <td>
 
                                                 <Image

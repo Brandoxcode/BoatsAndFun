@@ -28,7 +28,7 @@ export default function CartSidebar() {
           ? ''
           : cartItems.length > 0 &&
             (pathname === '/' || pathname.indexOf('/product/') >= 0)
-            ? 'fixed top-0 right-0 w-24 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
+            ? 'fixed top-0 right-0 w-24 md:w-28 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
             : 'hidden'
       }
     >
@@ -38,7 +38,7 @@ export default function CartSidebar() {
         <div className="py-5 px-2">Cart is empty</div>
       ) : (
         <>
-          <div className="p-2 flex flex-col items-center border-b border-b-gary-600">
+          <div className="p-2 flex flex-col items-center ">
             <div>Subtotal</div>
             <div className="font-bold text-orange-700">${itemsPrice}</div>
             {cartItems.map((item) => (
@@ -49,8 +49,8 @@ export default function CartSidebar() {
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={50}
-                  height={50}
+                  width={100}
+                  height={100}
                   className="p-1"
                 ></Image>
                 <select
@@ -59,8 +59,8 @@ export default function CartSidebar() {
                     addToCartHandler(item, Number(e.target.value))
                   }
                 >
-                  {[...Array(item.countInStock).keys()].map((x) => (
-                    <option key={x = 0.5} value={x *= 0.5}>
+                  {[...Array(item.countInStock).keys()].map((x, idx) => (
+                    <option key={idx} value={x *= 0.5}>
                       {x *= 1}
                     </option>
                   ))}
@@ -75,10 +75,10 @@ export default function CartSidebar() {
             ))}
           </div>
           <button
-            className="w-full text-center p-1  rounded-2xl border-2"
+            className="w-full text-center py-1 rounded-2xl border-2 bg-black"
             onClick={() => router.push('/info')}
           >
-            checkout
+            <p className='text-white'>Checkout</p>
           </button>
         </>
       )}

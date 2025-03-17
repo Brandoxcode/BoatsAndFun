@@ -1,3 +1,4 @@
+
 import CrabandShellfish from "@/components/CrabandShellfish";
 import FishFillets from "@/components/FishFillets";
 import FreshText from "@/components/FreshText";
@@ -13,7 +14,7 @@ import { data } from "@/utils/data";
 export default function Home() {
   const { products, shrimp, CrabAndShellfish, SaucesandSalsa, Seasoning, Special } = data
   return (
-    <div>
+    <div className="">
       <div className="flex justify-center items-center pt-2">
         <FreshText />
       </div>
@@ -67,8 +68,8 @@ export default function Home() {
         {Special.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
-      </div>
 
+      </div>
     </div>
   )
 }
