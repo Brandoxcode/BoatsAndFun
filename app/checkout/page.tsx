@@ -110,7 +110,7 @@ const checkout = () => {
                                     ))}
                                 </tbody>
                             </table>
-                            <Link className="default-button inline-block " href="/cart">
+                            <Link className="default-button inline-block " href="/">
                                 Edit
                             </Link>
                             <div>
