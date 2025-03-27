@@ -38,7 +38,7 @@ export default function CartSidebar() {
         <div className="py-5 px-2">Cart is empty</div>
       ) : (
         <>
-          <div className="p-2 flex flex-col items-center border-b border-b-gary-600">
+          <div className="p-2 flex flex-col items-center">
             <div>Subtotal</div>
             <div className="font-bold text-orange-700">${itemsPrice}</div>
             {cartItems.map((item) => (
