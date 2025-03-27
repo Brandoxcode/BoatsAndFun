@@ -1,19 +1,13 @@
 'use client'
 import React, { useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { useRouter } from 'next/navigation'
+import { useDispatch } from 'react-redux'
 import { addToCart } from '@/redux/slices/CartSlice'
 
 const AddToCart = ({
     product,
     showQty = true,
-    redirect = false,
-    increasePerClick = false,
 }) => {
     const dispatch = useDispatch()
-
-    const { cartItems } = useSelector((state) => state.cart)
-    const router = useRouter()
     const [qty, setQty] = useState(1)
 
     const addToCartHandler = () => {

@@ -28,7 +28,7 @@ export default function CartSidebar() {
           ? ''
           : cartItems.length > 0 &&
             (pathname === '/' || pathname.indexOf('/product/') >= 0)
-            ? 'fixed top-0 right-0 w-24 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
+            ? 'fixed top-0 right-0 md:w-28 w-20 h-full shadow-lg border-l border-l-gary-700 overflow-scroll bg-cyan-600	'
             : 'hidden'
       }
     >
@@ -38,7 +38,7 @@ export default function CartSidebar() {
         <div className="py-5 px-2">Cart is empty</div>
       ) : (
         <>
-          <div className="p-2 flex flex-col items-center border-b border-b-gary-600">
+          <div className="p-2 flex flex-col items-center ">
             <div>Subtotal</div>
             <div className="font-bold text-orange-700">${itemsPrice}</div>
             {cartItems.map((item) => (
@@ -59,8 +59,8 @@ export default function CartSidebar() {
                     addToCartHandler(item, Number(e.target.value))
                   }
                 >
-                  {[...Array(item.countInStock).keys()].map((x) => (
-                    <option key={x = 0.5} value={x *= 0.5}>
+                  {[...Array(item.countInStock).keys()].map((x, i) => (
+                    <option key={i} value={x *= 0.5}>
                       {x *= 1}
                     </option>
                   ))}

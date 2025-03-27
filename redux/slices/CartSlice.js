@@ -48,8 +48,9 @@ const cartSlice = createSlice({
         },
         hideLoading: (state) => {
             state.loading = false
-        }
+        },
+        resetState: () => initialState
     },
 })
-export const { addToCart, removeFromCart, saveInfo, hideLoading } = cartSlice.actions
+export const { addToCart, removeFromCart, saveInfo, hideLoading, resetState } = cartSlice.actions
 export default cartSlice.reducer

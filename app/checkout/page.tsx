@@ -1,13 +1,17 @@
 'use client'
+
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { useDispatch } from 'react-redux'
+import { resetState } from '@/redux/slices/CartSlice'
 
-const checkout = () => {
+const Checkout = () => {
+    const dispatch = useDispatch()
     const {
         cartItems,
-        loading,
+        // loading,
         totalPrice,
         info,
     } = useSelector((state) => state.cart)
@@ -36,25 +40,23 @@ const checkout = () => {
                 memo: memo
             })
         })
-        const data = await res.json()
-        console.log(data)
-
-        alert('your order was submitted, is not confirmed until Boats and fun associate contacts you')
-
-        router.push('/thanks')
+        if (res.ok) {
+            alert('your order was submitted, is not confirmed until Boats and fun associate contacts you')
+            router.push('/thanks')
+            dispatch(resetState())
+        } else {
+            alert('something went wrong, try again')
+        }
     }
 
 
     return (
         <div>
-            {loading ? (
-                <div>Loading</div>
-            ) : cartItems.length === 0 ? (
+            {cartItems.length === 0 ? (
                 <div className='flex justify-center items-center'>
-                    Cart is empty. <Link href="/">Go shopping</Link>
+                    Cart is empty. <Link href="/" >Go shopping</Link>
                 </div>
             ) : (
-
                 <div className="grid md:grid-cols-4 md:gap-5 pt-2">
                     <div className="card  p-5">
                         <h2 className="mb-2 text-lg flex justify-center items-center pt-12">Contact Info</h2>
@@ -144,4 +146,4 @@ const checkout = () => {
         </div>
     )
 }
-export default checkout
+export default Checkout
