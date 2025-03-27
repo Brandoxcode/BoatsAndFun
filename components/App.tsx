@@ -21,7 +21,7 @@ export default function App({ children }) {
                     ? ''
                     : cartItems.length > 0 &&
                         (pathname === '/' || pathname.indexOf('/product/') >= 0)
-                        ? 'mr-32'
+                        ? 'mr-24'
                         : ''
                     }`}
             >
