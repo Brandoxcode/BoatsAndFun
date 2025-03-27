@@ -59,8 +59,8 @@ export default function CartSidebar() {
                     addToCartHandler(item, Number(e.target.value))
                   }
                 >
-                  {[...Array(item.countInStock).keys()].map((x) => (
-                    <option key={x = 0.5} value={x *= 0.5}>
+                  {[...Array(item.countInStock).keys()].map((x, i) => (
+                    <option key={x} value={x *= 0.5}>
                       {x *= 1}
                     </option>
                   ))}
