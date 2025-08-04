@@ -11,9 +11,9 @@ import { data } from "@/utils/data";
 
 
 export default function Home() {
-  const { products, shrimp, CrabAndShellfish, SaucesandSalsa, Seasoning, Special } = data
+  const { products, shrimp, CrabAndShellfish, SaucesandSalsa, Seasoning, Special, SeasonedButters, Dips } = data
   return (
-    <div>
+    <div className="bg-white p-4 rounded-lg">
       <div className="flex justify-center items-center pt-2">
         <FreshText />
       </div>
@@ -41,6 +41,27 @@ export default function Home() {
       </div>
       <div className="justify-center items-center grid grid-rows-1 pt-2">
         {CrabAndShellfish.map((product) => (
+          <ProductItem key={product.id} product={product} />
+        ))}
+      </div>
+      <div className="flex justify-center items-center pt-6">
+      <div className="flex justify-start items-center border-x-1 border-y-2 border-indigo-100 min-w-[50%]">
+            <p className="p-4 text-4xl text-cyan-950">Seasoned Butters</p>
+
+        </div>
+      </div>
+      <div className="justify-center items-center grid grid-rows-1 pt-2">
+        {SeasonedButters.map((product) => (
+          <ProductItem key={product.id} product={product} />
+        ))}
+      </div>
+      <div className="flex justify-center items-center pt-6">
+      <div className="flex justify-start items-center border-x-1 border-y-2 border-indigo-100 min-w-[50%]">
+          <p className="p-4 text-4xl text-cyan-950">Dips</p>  
+        </div>
+      </div>
+      <div className="justify-center items-center grid grid-rows-1 pt-2">
+        {Dips.map((product) => (
           <ProductItem key={product.id} product={product} />
         ))}
       </div>
