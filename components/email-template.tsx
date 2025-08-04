@@ -105,7 +105,7 @@ const EmailTemplate = ({ item, name, number, email, memo }: any) => (
                             {item.map((product, index) => (
                                 <div key={index} style={{
                                     padding: '12px 16px',
-                                    backgroundColor: '#f3f4f6',
+                                    backgroundColor: '#ffffff',
                                     borderRadius: '8px',
                                     border: '1px solid #e5e7eb',
                                     width: '100%',
