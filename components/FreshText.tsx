@@ -5,7 +5,7 @@ const FreshText = () => {
         <div className="flex gap-6 items-center p-4">
             
             <div>
-                <Image src="/images/delivery.png" alt="logo" width={300} height={60} />
+                <Image src="/images/delivery.png" alt="logo" width={300} height={100} />
             </div>
             
             <div className="bg-gray-100 rounded-lg p-4 max-w-[600px]">

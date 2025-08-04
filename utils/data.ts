@@ -294,7 +294,7 @@ export const data = {
         },
         {
             id: '210',
-            image: '/images/lobsterTail.png',
+            image: '/images/lobstertail.png',
             name: 'Lobster Tail',
             description: 'Sold by the pound',
             orderBy: 'lb',
@@ -501,7 +501,7 @@ export const data = {
         },
         {
             id: '32',
-            image: '/images/evergladesChicken.png',
+            image: '/images/evergladeschicken.png',
             name: 'Everglades Fish & Chicken ',
             description: '',
             orderBy: '',
