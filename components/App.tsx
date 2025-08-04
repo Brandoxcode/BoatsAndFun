@@ -6,12 +6,12 @@ import { useEffect } from 'react'
 import { hideLoading } from '@/redux/slices/CartSlice'
 import { usePathname } from 'next/navigation'
 
-export default function App({ children }) {
+export default function App({ children }:any) {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(hideLoading())
     }, [dispatch])
-    const { cartItems, loading } = useSelector((state) => state.cart)
+    const { cartItems, loading } = useSelector((state:any) => state.cart)
     const pathname = usePathname()
 
     return (

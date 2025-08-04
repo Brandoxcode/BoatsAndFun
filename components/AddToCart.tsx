@@ -6,7 +6,7 @@ import { addToCart } from '@/redux/slices/CartSlice'
 const AddToCart = ({
     product,
     showQty = true,
-}) => {
+}:any) => {
     const dispatch = useDispatch()
     const [qty, setQty] = useState(1)
 

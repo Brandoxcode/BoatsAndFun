@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AddToCart from "./AddToCart";
 
-export default function ProductItem({ product }) {
+export default function ProductItem({ product }:any) {
     return (
         <div className="card w-full p-2 px-5">
             <ul role="list" className="divide-y divide-gray-100 ">

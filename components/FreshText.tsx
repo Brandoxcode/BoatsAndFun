@@ -1,12 +1,19 @@
+import Image from "next/image"
+
 const FreshText = () => {
     return (
-        <div>
-            <h1 className="bg-cyan-700 text-slate-200 text-5xl p-1.5 flex justify-center items-center">Fresh Fish Delivery</h1>
-            <div className=" bg-gray-400 mt-1 text-2xl max-w-[700px] rounded p-1">
-                <ul className="list-disc list-inside">
-                    <li>Order by 1pm for next day delivery.</li>
-                    <li>Orders can be picked up at our store in North Captiva during normal business hours (9am-5pm)</li>
-                    <li>If your using your phone, please rotate to landscape</li>
+        <div className="flex gap-6 items-center p-4">
+            
+            <div>
+                <Image src="/images/delivery.png" alt="logo" width={300} height={60} />
+            </div>
+            
+            <div className="bg-gray-100 rounded-lg p-4 max-w-[600px]">
+                <ul className="space-y-2 text-lg text-gray-700">
+                    <li>• Order by 3pm for next day delivery</li>
+                    <li>• Pickup available at our North Captiva store (9am-5pm)</li>
+                    <li>• Prices are subject to change based on market price</li>
+                    <li>• A 35% delivery charge is applied to all orders</li>
                 </ul>
             </div>
         </div>

@@ -9,7 +9,7 @@ export async function POST(request: Request) {
     try {
         const body = await request.json()
         const { item, name, email, number, memo } = body
-        console.log('body', body)
+        
         const data = await resend.emails.send({
             from: 'Boats and Fun <noreply@boatsandfunorders.com>',
             to: [email, 'info@boatsandfun.com', 'bran.aaraya@gmail.com'],

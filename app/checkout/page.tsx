@@ -14,7 +14,7 @@ const Checkout = () => {
         // loading,
         totalPrice,
         info,
-    } = useSelector((state) => state.cart)
+    } = useSelector((state: any) => state.cart)
 
     const router = useRouter()
 
@@ -26,7 +26,7 @@ const Checkout = () => {
         const number = info.number
         const memo = info.memo
 
-        const product = cartItems.map(items => {
+        const product = cartItems.map((items: any) => {
             return `${items.qty} ${items.orderBy}: ${items.name}; `
         })
 
@@ -86,7 +86,7 @@ const Checkout = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {cartItems.map((item) => (
+                                    {cartItems.map((item: any ) => (
                                         <tr key={item.id} className="border-b">
                                             <td>
 
