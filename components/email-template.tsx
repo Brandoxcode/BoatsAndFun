@@ -93,10 +93,7 @@ const EmailTemplate = ({ item, name, number, email, memo }: any) => (
                     backgroundColor: '#ffffff',
                     padding: '15px',
                     borderRadius: '4px',
-                    border: '1px solid #e5e7eb',
-                    maxHeight: '200px',
-                    overflowY: 'auto',
-                    overflowX: 'hidden'
+                    border: '1px solid #e5e7eb'
                 }}>
                     {Array.isArray(item) ? (
                         <div style={{ 
