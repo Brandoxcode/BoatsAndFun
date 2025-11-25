@@ -60,7 +60,7 @@ export const data = {
         {
             id: '7',
             image: '/images/s1.png',
-            name: 'Large',
+            name: 'Large shrimp',
             description: '20-25 per pound',
             orderBy: 'lb',
             price: 15.95,
@@ -69,7 +69,7 @@ export const data = {
         {
             id: '8',
             image: '/images/s1.png',
-            name: 'Jumbo',
+            name: 'Jumbo shrimp',
             description: '14-16 per pound',
             orderBy: 'lb',
             price: 20,
